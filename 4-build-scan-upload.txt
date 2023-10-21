@@ -22,6 +22,7 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v3
+      
     - name: Build and tag Image
       run: |
         docker build -t ${{env.DOCKER_USER}}/${{env.DOCKER_REPOSITORY}}:${{env.NODE_IMAGE_TAG}} .

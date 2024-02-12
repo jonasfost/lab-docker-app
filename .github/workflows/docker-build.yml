@@ -34,7 +34,8 @@ jobs:
         image: ${{env.DOCKER_USER}}/${{env.DOCKER_REPOSITORY}}:${{env.NODE_IMAGE_TAG}}
         annotations: true
         dockerfile: ./Dockerfile
-        severity: CRITICAL
+        severity: CRITICAL, HIGH
+        # severity_threshold: CRITICAL
 
     - name: Upload SARIF file
       if: ${{ steps.scan.outputs.sarif != '' }}

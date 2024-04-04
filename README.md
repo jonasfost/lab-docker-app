@@ -1,1 +1,1 @@
-# BUild, Scan, and Push Docker Image
+# Build, Scan, and Push Docker Image
